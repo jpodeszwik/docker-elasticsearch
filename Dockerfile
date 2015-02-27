@@ -5,7 +5,7 @@ FROM dockerfile/java:oracle-java8
 
 # Install elasticsearch
 ENV ES_CONFIG_PATH /data/config/elasticsearch.yml 
-ENV ES_VERSION 1.4.1
+ENV ES_VERSION 1.4.4
 RUN \
   cd /tmp && \
   wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-$ES_VERSION.tar.gz && \
