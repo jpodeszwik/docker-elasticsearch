@@ -1,11 +1,11 @@
 #
 # jpodeszwik/elasticsearch Dockerfile
 #
-FROM dockerfile/java:oracle-java8 
+FROM java:openjdk-8-jdk
 
 # Install elasticsearch
 ENV ES_CONFIG_PATH /data/config/elasticsearch.yml 
-ENV ES_VERSION 1.7.1
+ENV ES_VERSION 1.7.2
 RUN \
   cd /tmp && \
   wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-$ES_VERSION.tar.gz && \
